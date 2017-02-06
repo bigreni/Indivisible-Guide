@@ -78,10 +78,10 @@ a.backButton {
 }
 
 p.title{
-    font-size: large;
+    font-size: x-large;
     font-family: Arial;
-    font-style: italic;
     text-align: center;
+    color: #39567d;
 }
 
 h1.selectLanguage {
