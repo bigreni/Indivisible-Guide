@@ -47,3 +47,8 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+function openWindow(url)
+{
+    var ref = cordova.InAppBrowser.open(url, '_system', 'location=yes');
+}
