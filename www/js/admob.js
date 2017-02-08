@@ -150,3 +150,9 @@ function openWindow(url)
 {
     var ref = cordova.InAppBrowser.open(url, '_system', 'location=yes');
 }
+
+function loadEvents()
+{
+    window.location.href = "events.html";
+    return true;
+}
