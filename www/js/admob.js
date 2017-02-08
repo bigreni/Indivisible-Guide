@@ -9,7 +9,7 @@
     var admobid = {};
     if (/(android)/i.test(navigator.userAgent)) {
         admobid = { // for Android
-            banner: 'ca-app-pub-1683858134373419/7033447889',
+            banner: 'ca-app-pub-1683858134373419/4287481881',
             interstitial:'ca-app-pub-1683858134373419/6232537882'
            //banner: 'ca-app-pub-3886850395157773/3411786244'
             //interstitial: 'ca-app-pub-9249695405712287/3301233156'
@@ -139,7 +139,7 @@ function askRating()
   usesUntilPrompt: 10,
   promptAgainForEachNewVersion: false,
   storeAppURL: {
-                android: 'market://details?id=com.indivisible.withads'
+                android: 'market://details?id=com.indivisibleguide.withads'
                }
 };
  

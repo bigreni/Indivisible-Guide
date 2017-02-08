@@ -14,22 +14,18 @@
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <link rel="stylesheet" href="css/index.css">
 </head>
-<body onload="onLoad();">
+<body>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/admob.js"></script>
         <div id="fullpage" data-role="page">
             <div data-role="header">
 		        <p class="title">INDIVISIBLE</p>
             </div>
-            <div data-role="content">
-                <ul id="lstLanguages" data-role="listview">
-                <li><a href="calendar.html" class="langOption"><h1 class="selectLanguage">Calendar</h1></a></li>
-                <li><a href="groups.html" class="langOption"><h1 class="selectLanguage">Local Groups</h1></a></li>
-                <li><a href="download.html" class="langOption"><h1 class="selectLanguage">Download Guide</h1></a></li>
-                <li><a href="events.html" class="langOption"><h1 class="selectLanguage">Local Events</h1></a></li>
-                <li><a href="ads.html" class="langOption"><h1 class="selectLanguage">Why are there ads?</h1></a></li>
-                </ul>
-        </div>
+            <a href="index.html" class="ui-btn ui-btn-b" data-rel="back">Back</a>
+            <link href='https://actionnetwork.org/css/style-embed.css' rel='stylesheet' type='text/css' />
+            <script src='https://actionnetwork.org/widgets/v2/event_campaign/local-indivisible-actions?format=js&source=widget'></script>
+	        <div id='can-event_campaign-area-local-indivisible-actions' style='width: 100%'><!-- this div is the target for our HTML insertion -->
+	        </div>
         </div>
 </body>
 </html>
