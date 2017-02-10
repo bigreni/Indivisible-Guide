@@ -156,3 +156,5 @@ function loadEvents()
     window.location.href = "events.html";
     return true;
 }
+
+    
