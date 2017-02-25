@@ -10,7 +10,7 @@
     if (/(android)/i.test(navigator.userAgent)) {
         admobid = { // for Android
             banner: 'ca-app-pub-1683858134373419/4287481881',
-            interstitial:'ca-app-pub-1683858134373419/6232537882'
+            interstitial:'ca-app-pub-1683858134373419/5978940686'
            //banner: 'ca-app-pub-3886850395157773/3411786244'
             //interstitial: 'ca-app-pub-9249695405712287/3301233156'
         };
@@ -20,8 +20,8 @@
         if (!AdMob) { alert('admob plugin not ready'); return; }
         initAd();
         // display the banner at startup
-        //loadInterstitial();
-        createSelectedBanner();
+        loadInterstitial();
+        //createSelectedBanner();
     }
     function initAd() {
         var defaultOptions = {
