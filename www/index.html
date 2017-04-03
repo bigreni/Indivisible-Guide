@@ -13,10 +13,39 @@
 <!-- Include the jQuery Mobile library -->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <link rel="stylesheet" href="css/index.css">
+    <style>
+            /* Hide all the app pages until jQuery Mobile inits to
+               avoid the Flash of Unstyled Content */
+            .splashscreen {
+                width: 100%;
+                height: 100%;
+                border: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index:1001;
+                background: lightgrey;
+                text-shadow: none;
+                color: black;
+            }
+        </style>
 </head>
 <body>
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/admob.js"></script>
+    <div id="screen" class="splashscreen" style="display: none"></div>
+        <script>
+            // Show the splash screen with a loading message
+            // Handler to hide the message when the loading stops
+            window.onload = function () {
+                onLoad();
+                //document.getElementById("screen").style.display = 'none';
+            };
+            document.getElementById("screen").innerHTML = 'Loading the app...';
+            document.getElementById("screen").style.display = 'block';
+        </script> 
         <div id="fullpage" data-role="page">
             <div data-role="header">
 		        <p class="title">INDIVISIBLE</p>
@@ -26,7 +55,7 @@
                 <li><a href="calendar.html" class="langOption"><h1 class="selectLanguage">Calendar</h1></a></li>
                 <li><a href="groups.html" class="langOption"><h1 class="selectLanguage">Local Groups</h1></a></li>
                 <li><a href="download.html" class="langOption"><h1 class="selectLanguage">Download Guide</h1></a></li>
-                <li><a href="javascript:loadEvents();" class="langOption"><h1 class="selectLanguage">Local Events</h1></a></li>
+                <li><a href="events.html" class="langOption"><h1 class="selectLanguage">Local Events</h1></a></li>
                 <li><a href="clock.html" class="langOption"><h1 class="selectLanguage">2018 Election Countdown</h1></a></li>
                 <li><a href="ads.html" class="langOption"><h1 class="selectLanguage">Why are there ads?</h1></a></li>
                 </ul>
