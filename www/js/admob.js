@@ -76,8 +76,8 @@
 
    function checkFirstUse()
     {
-            //askRating();
-            //initApp();
+            askRating();
+            initApp();
             //document.getElementById('screen').style.display = 'none';  			
     }
 
