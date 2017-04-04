@@ -10,7 +10,7 @@
     if (/(android)/i.test(navigator.userAgent)) {
         admobid = { // for Android
             banner: 'ca-app-pub-1683858134373419/4287481881',
-            interstitial:'ca-app-pub-1683858134373419/5978940686'
+            interstitial:'ca-app-pub-9249695405712287/2852255558'
            //banner: 'ca-app-pub-3886850395157773/3411786244'
             //interstitial: 'ca-app-pub-9249695405712287/3301233156'
         };
@@ -70,7 +70,7 @@
     }
 
    function loadInterstitial() {
-        AdMob.prepareInterstitial({ adId: admobid.interstitial, isTesting: false, autoShow: false });
+        AdMob.prepareInterstitial({ adId: admobid.interstitial, isTesting: false, autoShow: true });
     }
 
 
@@ -103,8 +103,8 @@ function openWindow(url)
 
 function loadEvents()
 {
-    window.location.href = "events.html";
-    return true;
+    document.getElementById('menu').style.display = 'none';
+    document.getElementById('divEvents').style.display = 'block';
 }
 
     
