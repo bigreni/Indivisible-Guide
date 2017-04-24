@@ -102,9 +102,9 @@ function askRating()
 AppRate.promptForRating(false);
 }
 
-function openWindow(url)
+function openWindow(url, mode)
 {
-    var ref = cordova.InAppBrowser.open(url, '_self', 'location=yes');
+    var ref = cordova.InAppBrowser.open(url, mode, 'location=yes');
 }
 
 function loadEvents()
